@@ -131,3 +131,6 @@ console.log(protienHighToLow());
 
 console.log('Task 9: Cabs low to high');
 console.log(cabLowtoHigh());
+
+console.log('Calarie');
+console.log(sortCalorie());
