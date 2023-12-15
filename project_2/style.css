@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.nav{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+    background: #6F6AF7;
+    width: 1728px;
+    height: 127px;
+    flex-shrink: 0;
+    
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+.name{
+width: 215px;
+height: 63px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Delius Unicase;
+font-size: 61.43px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+a{
+   
+height: 33px;
+flex-shrink: 0;
+color: #FFF;
+font-family: DM Sans;
+font-size: 36.43px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}
+
+.section1{
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.codingimg{
+    width: 456px;
+height: 507px;
+flex-shrink: 0;
+border-radius: 20px;
+}
+
+.textimg{
+    width: 972px;
+height: 507px;
+flex-shrink: 0;
+border-radius: 20px;
+border: 6px solid #FFF;
+background: #E5D8FF;
+padding: 30px;
+box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.text{
+    width: 922px;
+height: 83px;
+flex-shrink: 0;
+color: #6F7373;
+font-family: DM Sans;
+font-size: 29px;
+font-style: normal;
+font-weight: 400;
+line-height: 178.7%; /* 51.823px */
+}
+
+.section2{
+    display: flex;
+    margin: 40px;
+   gap: 40px;
+}
+
+.box1{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 29px;
+font-style: normal;
+font-weight: 700;
+line-height: 178.7%; /* 51.823px */
+letter-spacing: 1.16px;
+    width: 337px;
+height: 145.481px;
+flex-shrink: 0;
+border-radius: 11px;
+background: #929DFF;
+box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+}
+.box2{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 29px;
+font-style: normal;
+font-weight: 700;
+line-height: 178.7%; /* 51.823px */
+letter-spacing: 1.16px;
+    width: 337px;
+height: 145.481px;
+flex-shrink: 0;
+border-radius: 11px;
+background: #734CF2;
+box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+}
+.box3{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 29px;
+font-style: normal;
+font-weight: 700;
+line-height: 178.7%; /* 51.823px */
+letter-spacing: 1.16px;
+    width: 337px;
+    height: 145.481px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #D288FF;
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+}
+.box4{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 29px;
+font-style: normal;
+font-weight: 700;
+line-height: 178.7%; /* 51.823px */
+letter-spacing: 1.16px;
+    width: 337px;
+    height: 145.481px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #000;
+    box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+}
+
+.section3{
+    display: flex;
+    width: 1542px;
+height: 717px;
+flex-shrink: 0;
+border-radius: 21px;
+background: #483EFF;
+padding: 60px;
+align-items: center;
+}
+.left1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+.div{
+    width: 397px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 133px;
+flex-shrink: 0;
+border-radius: 22px;
+background: #BCE0F6;
+padding: 40px;
+box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.39);
+color: #FFF;
+font-family: DM Sans;
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: 178.7%; /* 62.545px */
+letter-spacing: 1.4px;
+}
+
+ .right1{
+    display: flex;
+    flex-direction: column;
+    width: 1004px;
+height: 656px;
+flex-shrink: 0;
+border-radius: 19px;
+background: #FFF;
+padding: 40px;
+}
+
+.heading{
+    color: #04285A;
+font-family: Inter;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 3.99px;
+width: 370px;
+height: 36px;
+flex-shrink: 0;
+}
+.div2{
+   background-color: transparent; 
+   border-radius: 22px;
+border: 5px solid #FFF;
+width: 397px;
+height: 133px;
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFF;
+font-family: DM Sans;
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: 178.7%; /* 62.545px */
+letter-spacing: 1.4px;
+}
+
+.infoText{
+margin-top: 80px;
+height: 22px;
+flex-shrink: 0;
+color: #143565;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+
+.info{
+    padding: 20px;
+}
+
+

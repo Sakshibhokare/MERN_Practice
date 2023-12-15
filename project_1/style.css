@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main{
+    background-color: #FFCD9E;
+    width:  1440px;
+    height: 592px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.heading{
+    width: 562px;
+    color: #282828;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.content{
+    color: #484848;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    display: flex;
+    width: 495px;
+    height: 81px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.show{
+    color: #282828;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 32px */
+    width: 227px;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.email, input{
+    display: flex;
+    width: 350px;
+    height: 64px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #888;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.register, a{
+display: flex;
+width: 216px;
+height: 64px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background-color: black;
+cursor: pointer;
+text-decoration: none;
+}
+
+.whiteText{
+    display: flex;
+    width: 344px;
+    height: 61px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0; 
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+.button{
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    background-color:black ;
+    width: 1440px;
+height: 298px;
+flex-shrink: 0;
+display: flex;
+color: white;
+justify-content: space-around;
+color: #FFF;
+text-align: right;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 32px */
+cursor: pointer;
+padding-top: 20px;
+
+}
+
+.msg{
+    color: #282828;
+font-family: Inter;
+font-size: 41.51px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 62.265px */
+}
