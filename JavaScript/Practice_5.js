@@ -63,3 +63,32 @@ for( var j of arr){
 // for(var s of obj){
 //     console.log(s)
 // }
+// obj.i mean it is actually searching for i 
+// obj[i] means anything equvalent to this 
+
+
+
+
+
+
+// premitive and referencial ---------------------------------------
+
+let y =10;
+let z =y;
+y=20
+console.log("y:", y)
+console.log("z:", z)
+// 20 10 
+
+
+
+// q and t are both accessing to the key memory block in short they are taking reference of [key=], so it will reflect to botj 
+// reference of q and t is same which is key 
+let q = {
+    key:10
+}
+let t=q
+q.key=20
+console.log("q:", q)
+console.log("t:", t)
+// 20 20 
