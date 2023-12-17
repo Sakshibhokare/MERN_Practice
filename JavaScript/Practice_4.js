@@ -130,8 +130,9 @@ console.log(temp)
 
 console.log("----------------------------------")
 var num=[20, 30, 40, 50]
-// reduce always have a two parameters in which first will contain updated value with respect to second 
+// reduce always has two parameters which first will contain an updated value to the second 
 var sum= num.reduce((accumulator, item)=>{
     return accumulator=accumulator+item 
 })
 console.log(sum) 
+// end    
