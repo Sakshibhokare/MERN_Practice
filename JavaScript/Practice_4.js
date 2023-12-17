@@ -63,7 +63,13 @@ for(var i=0; i<arr.length; i++){
     console.log(i, arr[i])
 }
 
-// forEach is a higher order function 
-// arr.forEach(function helper(){
+// forEach is a higher order function
+// forEach accepts a function 
+// it will run according to the no of elements present in a array i.e. clg will get printed n number of time  
 
-// })
+// represenation     first=item   index  completeArray 
+arr.forEach(function helper(item, index, array){
+    console.log('helper function is there', item, index, array)
+})
+
+
