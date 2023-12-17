@@ -75,6 +75,8 @@ for( var j of arr){
 
 let y =10;
 let z =y;
+// deep copy 
+// means that only the value is copied and not the reference 
 y=20
 console.log("y:", y)
 console.log("z:", z)
@@ -87,8 +89,29 @@ console.log("z:", z)
 let q = {
     key:10
 }
-let t=q
+// this is a shallow copy concept 
+// means that the reference is also copied along with the value 
+// let t=q
+let t={...q}
 q.key=20
 console.log("q:", q)
 console.log("t:", t)
 // 20 20 
+
+
+
+// spread operation {...a} to understand this concept we can make a use of container of marbles 
+// in wich we have to add marbles in M3 container from M1 and M2 but only marbles not container of m1 and m2 
+// so we can write as M3=[...m1 , ...m2]
+
+
+
+// nested object 
+// we can not use ... spread operator in this case 
+// instead we can use json.parse and json stringfy 
+let a ={
+    key:10,
+    nested:{
+         nestedKey:100
+    }
+}
