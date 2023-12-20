@@ -110,3 +110,131 @@ span {
     line-height: normal;
     letter-spacing: 1.7px;
 }
+
+.option {
+    max-width: 100%;
+    width: 700px;
+    min-width: 49vh;
+    display: grid;
+    position: relative;
+    place-content: center;
+}
+
+.con {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 18px;
+}
+
+.computer {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 18px;
+    display: none;
+}
+
+.sci-con {
+    background-color: #BD00FF;
+    right: 8rem;
+    top: 3%;
+}
+
+.rock-con {
+    background-color: #0074B6;
+    left: 8rem;
+    top: 3%;
+}
+
+.paper-con {
+    background-color: #FFA943;
+    left: 18rem;
+    top: 250px;
+}
+
+.item {
+    background-color: white;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.user,
+.pc {
+    opacity: 0;
+}
+
+.btn {
+    width: 119px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30rem;
+    left: 38rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    scale: 1.05;
+}
+
+.rule-con {
+    width: 278px;
+    height: 325px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border: 7px solid #FFF;
+    background: #004429;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left: 38rem;
+    top: 6rem;
+}
+
+.heading{
+    color: #FFF;
+font-family: Roboto;
+font-size: 29px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+}
+.li {
+    width: 211px;
+    height: 27px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background: #FFD600;
+}
