@@ -37,7 +37,7 @@ sample2()
                                     //   b=[]          b=10
                                     // once this is complete we can execute remaining content 
  
-
+// ---------------------------------------------------------------------------------------------
 //  hoisting :      
 // we will alocate memory to function sample3 
 // and when we try to call it anywhere it will look 
@@ -60,8 +60,57 @@ sample2()
   }
 
 
-
+// ----------------------------------------------------------------------------------------------------
 //   TDZ: in this case the variable is in memory but we can not access it this is known as a TDZ
   console.log(s)
   let s=10;
+//   TDZ happens with let and const only 
 //   in case of var it will give undefined 
+
+// ----------------------------------------------------------------------------------------------
+// call stack follows LIFO : use to maintain the flow of execution
+// | inner fun|
+// | outer fun|
+// |   global |
+
+// if the value is not present in inner fun will pop and look into outer , even if the value is not present is outer fun will look in global scope
+
+
+
+// -----------------------------------------------------------------
+// lexical scoping : look into all scope below the current scope
+// if we have a muliple scope d c b a 
+// if the value is not present at d will look into c or b or a 
+// if not present in a then return arror 
+
+
+
+// --------------------------------------------------------------------
+// closure 
+  function outer(){
+    let outerVariable = 10;
+    // closure property of inner function is helping it to access the value of outerVariable 
+    // despite it not being approachable with lexical scoping 
+    function inner(){
+        console.log(outerVariable);
+    }
+    return inner;
+  }
+
+  let result = outer();
+  result();//its equivalent to saying inner()
+
+
+//   call stack
+
+// |outer  | 
+// | global|
+
+// inner will never go to callstack because we have not called that function 
+// but when we calle result(): it means we are actually calling inner() 
+// now the call stack is 
+// |inner |
+// |global|
+
+// outerVariableis not present in global scope still this is working because of closure property 
+
