@@ -53,6 +53,7 @@ listFood(Protien);
 
 
 
+
 // Task 8: list all the food items with calorie above 100
 function foodAboveCal(calorie){
     return foodData.filter((food)=> food.calorie > calorie);

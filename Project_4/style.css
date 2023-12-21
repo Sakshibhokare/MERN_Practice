@@ -188,7 +188,7 @@ span {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 30rem;
+    top: 28rem;
     left: 38rem;
     cursor: pointer;
 }
@@ -216,7 +216,7 @@ span {
     gap: 30px;
     position: relative;
     left: 38rem;
-    top: 3rem;
+    top: 1rem;
 }
 
 .heading {
@@ -266,7 +266,7 @@ span {
     line-height: normal;
     position: relative;
     left: 53rem;
-    top: 3rem;
+    top: 1rem;
     cursor: pointer;
 }
 
