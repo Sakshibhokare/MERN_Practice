@@ -302,9 +302,11 @@ span {
     z-index: 1;
 }
 
+
 .show{
     left: 6rem;
     top: 3%;
+    
 }
 
 .right{

@@ -30,7 +30,6 @@ let close= document.querySelector(".close");
 con.forEach((element, index) => {
     element.addEventListener("click", () => {
         user.style.opacity = "1";
-        // element.style.display = "block";
         con.forEach(item => {
             item.style.display = "none";
         });
