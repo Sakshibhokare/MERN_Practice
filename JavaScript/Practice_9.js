@@ -67,3 +67,34 @@ dummy()
 let obj2={
     methods:dummy // point to windows
 }
+
+
+// **********
+// if function inside a function then it will point to the global 
+// if a arrow function is inside a function then it will point to the object 
+
+
+
+
+// binding --------------------------------------------------------
+
+// we can borrow one function from another object  
+let teacher={
+    name:"Mr. alpha",
+    age:60
+}
+
+let students ={
+    name:"lucky",
+    age:16,
+    printInfo:function(){
+
+        console.log(`${this.name} is ${this.age} years old`)
+    }
+}
+
+students.printInfo()
+
+// borrowing an method from another object syntax is 
+// methodToBorrow.call(objectToBorrowFor)
+students.printInfo.call(teacher);
