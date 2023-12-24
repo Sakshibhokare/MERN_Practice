@@ -16,7 +16,7 @@ let bf={
 // newStudent = createStudent(name, age, rollNo){
 
 // }
-
+//constructor: uses this and new keywards 
 function student(name, age, rollNo ){
     this.name= name;
     this.age=age;
@@ -41,3 +41,29 @@ function createStudent(name, age, school){
 let stud1= createStudent("aaa", 23, "abc")
 
 console.log(stud1)
+// pointing to windows and when it is in object it will point to that object only 
+// function dummy(){
+//     console.log(this)
+// }
+let obj ={
+    methodOfObj:function dummy(){ // point to object 
+        console.log(this)
+    }
+}
+// dummy()
+// pointing to object only 
+obj.methodOfObj()
+
+
+
+
+// --------------------------------------------------------
+// arrow function : again pointing to windows and when it is in object it still pointing to the windows 
+let dummy = ()=>{
+    console.log(this)
+}
+dummy()
+
+let obj2={
+    methods:dummy // point to windows
+}
