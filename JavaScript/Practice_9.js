@@ -98,3 +98,14 @@ students.printInfo()
 // borrowing an method from another object syntax is 
 // methodToBorrow.call(objectToBorrowFor)
 students.printInfo.call(teacher);
+
+// apply---------------------------------------
+console.log("-----call and apply is almost same only the parameters are different----------------------------")
+// we can pass an array with apply method 
+students.printInfo.apply(teacher)
+
+// call and apply directly print the functions 
+// bind will save the results and print when it is needed 
+console.log("---------------------------------------")
+let borrowed = students.printInfo.bind(teacher);
+borrowed()
