@@ -74,7 +74,7 @@ console.log("-----------------------------------")
 // we can handle it by using following way : callback
 doLogin(showUserDetails(doTransactions()));
 
-
+// if we have lot of function then callback hell can be a problem 
 
 // Promises: is the better option than callback 
 let response = doLogin() // sucessful failed pending
