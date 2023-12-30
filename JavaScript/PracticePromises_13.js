@@ -73,7 +73,7 @@ async function callApi(){
         let response = await fetch('https://catfact.ninja/fact');
         let data = await response.json();
         console.log(data.fact);
-        document.write(data.fact)
+        document.write(data.fact);
     }
     catch(e){
 console.log(e)

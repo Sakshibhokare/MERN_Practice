@@ -32,3 +32,15 @@ click.addEventListener("click",()=>{
 })
 
 // 5.Write a function to validate a form on submit event.
+//Form_Validate
+
+// 6. Write a function to fetch data from an API using the Fetch API and handle the response with a callback.
+
+async function apicall(){
+    let response= await fetch('https://fakestoreapi.com/products/1');
+    let data= await response.json();
+    document.write(data.title);
+    document.write(data.price);
+}
+
+apicall()
