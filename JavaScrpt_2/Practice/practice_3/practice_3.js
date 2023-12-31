@@ -39,8 +39,62 @@ click.addEventListener("click",()=>{
 async function apicall(){
     let response= await fetch('https://fakestoreapi.com/products/1');
     let data= await response.json();
-    document.write(data.title);
-    document.write(data.price);
+    // document.write(data.title);
+    // document.write(data.price);
 }
 
 apicall()
+
+// 7. Write a function to read a file using the Node.js File System module and handle the contents with a callback. 
+const fs = require('fs');
+
+function readFileContents(filepath, callback) {
+  // Use the readFile method of the fs module to read the contents of the file
+  fs.readFile(filepath, 'utf8', (error, contents) => {
+    if (error) {
+      // If an error occurs, call the callback with the error as the first argument
+      callback(error);
+    } else {
+      // If the file is read successfully, call the callback with the contents as the second argument
+      callback(null, contents);
+    }
+  });
+}
+
+// Example usage
+readFileContents('example.txt', (error, contents) => {
+  if (error) {
+    document.write(error);
+  } else {
+    document.write(contents);
+  }
+});
+
+
+// 8. Write a function to load an image asynchronously and handle the load event with a callback. 
+function loadImageAsync(url, callback) {
+    const img = new Image();
+  
+    // Set up event listener for when the image has loaded
+    img.addEventListener('load', () => {
+      callback(null, img);
+    });
+  
+    // Set up event listener for when there's an error loading the image
+    img.addEventListener('error', () => {
+      callback(new Error(`Failed to load image at ${url}`));
+    });
+  
+    // Start loading the image
+    img.src = url;
+  }
+  
+  // Example usage:
+  loadImageAsync('https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg', (error, img) => {
+    if (error) {
+      console.error(error);
+    } else {
+      // Add the loaded image to the page
+      document.body.appendChild(img);
+    }
+  });
