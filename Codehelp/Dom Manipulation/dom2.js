@@ -91,12 +91,14 @@ document.body.appendChild(myDiv);
 let element = document.querySelector("#wrapper");
 
 element.addEventListener('click', function(event){
-    console.log('span pr click kiya' + element.target.textContent);
+    if(event.target.nodeName='SPAN'){
+        console.log('span pr click kiya' + element.target.textContent); // it will work on span tag only 
+    }
+    
 })
 
 //when we click on span it will return "span" but when will click on para it will return "para span"
 //this is happening because of the phases
 
 
-// dispatchEvent**********************
 
