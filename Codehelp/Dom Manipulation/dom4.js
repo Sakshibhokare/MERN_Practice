@@ -172,3 +172,22 @@ result();// equal to displayName()
 // name ka scope end ho gaya hei and we are calling in displayName still it is working 
 // this is because of closure property 
 // closure has total information about function and data
+
+function outer(){
+    let a=0;
+    function inner(){
+        let a=3;
+        console.log(a)
+        function inner2(){
+            let a=4;
+            console.log(a)
+            
+        }
+        return inner2;
+    }
+
+    return inner;
+}
+
+let result2=outer();
+result2()
