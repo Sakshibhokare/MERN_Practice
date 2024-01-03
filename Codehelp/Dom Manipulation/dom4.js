@@ -154,3 +154,21 @@ async function utilities(){
 }
 
 utilities()
+
+
+
+//***********💕💕 closures 💕💕**********
+function abcd(){
+    let name ='******xyz******';
+    function displayName(){
+        console.log(name);
+    }
+   return displayName;
+}
+
+let result = abcd();
+result();// equal to displayName()
+
+// name ka scope end ho gaya hei and we are calling in displayName still it is working 
+// this is because of closure property 
+// closure has total information about function and data
