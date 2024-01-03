@@ -95,3 +95,7 @@ addmsg()
 // queue only return the function when the callstack is empty  
 // http://latentflip.com
 // all async operations will be in queue and run after complete execution of callstack 
+
+setTimeout(function(){
+    console.log("hello duniya")
+}, 2000)
