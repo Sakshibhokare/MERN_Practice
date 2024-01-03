@@ -91,7 +91,7 @@ document.body.appendChild(myDiv);
 let element = document.querySelector("#wrapper");
 
 element.addEventListener('click', function(event){
-    if(event.target.nodeName='SPAN'){
+    if(event.target.nodeName='SPAN'){ //uppercase is imp
         console.log('span pr click kiya' + element.target.textContent); // it will work on span tag only 
     }
     
