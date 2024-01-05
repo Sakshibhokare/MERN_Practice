@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Basics :
+    click->os->default browser-> chrome-> link-> domain name resolution->ip address(server)->now we know clients and server details 
+    then create connection using tcp we have handshak method, we can do encryption on data, after this our get request will be ready 
+    in http we have get put post and delete request 
+    get is usedto fetch data 
+    put is used to update the existing data 
+    post is used to submit new data 
+    delete is used to remove the data 
+
+    <h1>What is idompotent</h1>
+
+    we will used express framework to create the server side application 
+
+
+    steps:
+    1) create new folder
+    2) open in terminal
+    3) npm init -y 
+    4) npm i express 
+
+    //create your server
+    const express= require(express)
+    const app = express();
+
+    //app listen
+    app.listen(3000, (req, res)=>{
+        clg("server started")
+    })
+
+    //routes 
+    
+</body>
+</html>
