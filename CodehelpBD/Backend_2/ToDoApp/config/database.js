@@ -1,3 +1,4 @@
+// connection between application and db 
 const mongoose= require("mongoose");
 require("dotenv").config(); //whatever you have define in env that will get loaded in process obj
 
@@ -18,4 +19,5 @@ const dbConnect=()=>{
      });
 }
 
-module.exports=dbConnect
+//export this function 
+module.exports=dbConnect;
