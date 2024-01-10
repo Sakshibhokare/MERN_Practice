@@ -1,4 +1,3 @@
-
 // server Instantiate 
 const express = require('express');
 const app = express(); // single instance initiated 
