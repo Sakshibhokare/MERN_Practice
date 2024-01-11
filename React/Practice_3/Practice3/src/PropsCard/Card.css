@@ -1,0 +1,19 @@
+.Card{
+    background-color: teal;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
