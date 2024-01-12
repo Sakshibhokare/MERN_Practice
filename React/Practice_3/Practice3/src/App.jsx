@@ -1,6 +1,7 @@
 import Header from "./Header"
 import Footer from "./Footer"
 import Card from "./PropsCard/Card"
+import Card2 from "./PropsCard/Card2";
 
 function App() {
   // 5th maps and arrays 
@@ -57,7 +58,15 @@ function App() {
   when we want to decrement the values but it can not desplay thats why we should use state variable
   for that we will add hook which is useState so we can update and replace the value*/}
 
+{/* 7th class components
+accessing props in class components
+method in class components
+states in class components  */}
 
+
+{/* 8th class based props  
+we requires constructor to initialise */}
+<Card2 title={"saree"} price={20} stock={40}></Card2>
    </>
   )
 }
