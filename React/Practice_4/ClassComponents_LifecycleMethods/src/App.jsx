@@ -1,6 +1,7 @@
 import React from "react"
 import Controlled from "./components/Controlled"
 import Uncontrolled from "./components/Uncontrolled"
+import MyComponents from "./Lifecycle_Methods/MyComponents"
 function App() {
   
 
@@ -27,16 +28,16 @@ if we have multiple input fields in a form we can change the method of writing s
 {/* 2. *************Lifecycle Methods*********** */}
 {/* component life cycle
     phases
-       mounting
-       updating
-       unmounting
-    contructor
-    render
-    componentDidMount()
-    shouldComponentUpdate()
-    componentDidUpdate()
-    componentWillUnmount() */}
-
+       mounting: entering
+       updating: updating
+       unmounting: leaving
+    contructor: it runs very first
+    render:any update or mounting will run render function
+    componentDidMount(): as soon as your component mounted on state or web app this function will run
+    shouldComponentUpdate(): updation part: there might be some setuations on which we dont want update anything, it will return boolean value
+    componentDidUpdate(): it will run after the complete updation part
+    componentWillUnmount(): unmounting stage it will print the information */}
+<MyComponents></MyComponents>
 
     </>
   )
