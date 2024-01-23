@@ -19,7 +19,7 @@ function Controlled(){
         <div>
             <h1>Controlled component</h1>
 
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input type="text" value={fname} onChange={handleFnameChange} name="fname" placeholder="First Name"/>
                 <input type="text" value={lname} onChange={handleLnameChange} name="lname" placeholder="Last Name" />
                 <button>Submit</button>
