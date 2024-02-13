@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
-
-
+import Forms from '../Components/Forms';
+import Main from '../Components/Main';
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -29,36 +29,20 @@ const layoutStyle = {
   width: '100vw',
 };
 
-const data = [
-  {
-    title: 'Ant Design Title 1',
-  },
-  {
-    title: 'Ant Design Title 2',
-  },
-  {
-    title: 'Ant Design Title 3',
-  },
-  {
-    title: 'Ant Design Title 4',
-  },
-]
+
 
 const Dashboard = () => {
   return (
     <div>
       <Layout style={layoutStyle}>
         <Header style={headerStyle}>Header</Header>
-        
+          
+          <Forms></Forms>
 
         <hr />
-<h3 style={{padding:"0.5rem 2rem"}}>All Tasks</h3>
-        
-        {
-          data.map((item)=>{
-            <ul>{item.title}</ul>
-          })
-        }
+          <Main></Main>
+
+         
 
         <Footer style={footerStyle}>Footer</Footer>
       </Layout>
