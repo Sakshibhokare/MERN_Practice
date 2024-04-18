@@ -2,6 +2,7 @@ import React from 'react'
 import { Layout } from 'antd'
 import Forms from '../Components/Forms';
 import Main from '../Components/Main';
+import { useState } from 'react';
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -32,15 +33,31 @@ const layoutStyle = {
 
 
 const Dashboard = () => {
+  const [title, setTitle]=useState("");
+  const [issues, setIssues] = useState([
+    {
+      id:Date.now(),
+    title:'dummy issue'
+    }
+]);
+  // const [status, setStatus]=useState("");
+
+  const deleteIssue=()=>{
+    console.log('id that we have received', id)
+    const updatedIssues =issues.filter((issue)=>{
+      return issue.id!= id
+    })
+    setIssues(updatedIssues)
+  }
   return (
     <div>
       <Layout style={layoutStyle}>
         <Header style={headerStyle}>Header</Header>
           
-          <Forms></Forms>
+          <Forms title={title} setTitle={setTitle} setIssues={setIssues} issues={issues}></Forms>
 
-        <hr />
-          <Main></Main>
+        
+          <Main issues={issues} deleteIssue={deleteIssue}></Main>
 
          
 
